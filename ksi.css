@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(209, 198, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.login-container{
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+h1{
+    color: #0077cc;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+label{
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+input[type="email"]:focus,
+input[type="password"]:focus{ 
+    border-color: #0077cc;
+    outline: none;
+}
+input[type="email"],
+input[type="password"]{
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus{
+    background: #0077cc;
+}
+button[type="submit"]{
+    background: #0077cc;
+    color: white;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.footer-link{
+    margin-top: 1rem;
+    text-align: center;
+    font: size 0.5tb;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #0077cc;
+    font-weight:600;
+    transition: color 0.3s ease;
+}
+.footer-link a hover,
+.footer-link a focus{
+    color: #0077cc;
+    text-decoration: none;
+}
+@media(max-width: 420px){
+    .login-container{
+        padding: 1.5rem;
+    }
+}
